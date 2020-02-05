@@ -16,7 +16,7 @@ h5,
 h6 {
   font-family: 'Catamaran';
   font-weight: 800 !important;
-}
+} /* this means h1-h6 has these families*/
 
 .btn-xl {
   text-transform: uppercase;
@@ -29,7 +29,13 @@ h6 {
 .bg-black {
   background-color: #000 !important;
 }
-
+.container_custom {
+  width: 50%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
 .rounded-pill {
   border-radius: 5rem;
 }
@@ -59,7 +65,7 @@ header.masthead {
   overflow: hidden;
   padding-top: calc(7rem + 72px);
   padding-bottom: 7rem;
-  background: linear-gradient(0deg, #ff6a00 0%, #ee0979 100%);
+  background: linear-gradient(0deg, #151371 0%, #FF00B8 100%);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
@@ -82,8 +88,8 @@ header.masthead .masthead-content .masthead-subheading {
 header.masthead .bg-circle {
   z-index: 0;
   position: absolute;
-  border-radius: 100%;
-  background: linear-gradient(0deg, #ee0979 0%, #ff6a00 100%);
+  border-radius: 10%;
+  background: linear-gradient(0deg, #FFC700 0%, #ff3300 100%);
 }
 
 header.masthead .bg-circle-1 {
@@ -132,13 +138,13 @@ header.masthead .bg-circle-4 {
 }
 
 .btn-primary {
-  background-color: #ee0979;
+  background-color: #FF00B8;
   border-color: #ee0979;
 }
 
 .btn-primary:active, .btn-primary:focus, .btn-primary:hover {
-  background-color: #bd0760 !important;
-  border-color: #bd0760 !important;
+  background-color: #ee0979 !important;
+  border-color: #ee0979 !important;
 }
 
 .btn-primary:focus {
@@ -157,4 +163,7 @@ header.masthead .bg-circle-4 {
 
 .btn-secondary:focus {
   box-shadow: 0 0 0 0.2rem rgba(255, 106, 0, 0.5);
+}
+.portrait-circle {
+  border-radius: 50%;
 }
