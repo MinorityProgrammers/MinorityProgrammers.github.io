@@ -181,25 +181,26 @@ header.masthead .bg-circle-4 {
 /* COLLAPSIBLE from https://www.w3schools.com/howto/howto_js_collapsible.asp */
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
-  background-color: #eee;
-  color: #444;
+  background-color: rgb(44, 13, 100);
+  color: white;
   cursor: pointer;
   padding: 18px;
   width: 100%;
   border: none;
-  text-align: left;
+  text-align: center;
+  text-emphasis: bolder;
   outline: none;
   font-size: 15px;
 }
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .collapsible:hover {
-  background-color: #ccc;
+  background-color: rgb(255, 115, 60);
 }
 
 /* Style the collapsible content. Note: hidden by default */
 .content {
-  padding: 0 18px;
+  padding: 18px;
   display: none;
   overflow: hidden;
   background-color: #f1f1f1;
