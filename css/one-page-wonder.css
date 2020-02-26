@@ -167,3 +167,13 @@ header.masthead .bg-circle-4 {
 .portrait-circle {
   border-radius: 50%;
 }
+.portrait-circle:hover {
+  filter:grayscale(50%);
+  opacity: 50%;
+}
+
+/* STUFF iam adding use !important to take precedence, dont use same class name */
+.image-circ:hover{
+  border-radius: 50%;
+  filter:grayscale(50%)
+}
