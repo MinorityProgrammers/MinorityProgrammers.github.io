@@ -50,6 +50,7 @@
     </div>
   </div>
 </nav>
+<!-- JOIN US HEADER -->
 	<header class="masthead text-center text-white">
       <div class="masthead-content">
         <div class="container">
@@ -63,7 +64,58 @@
       <div class="bg-circle-3 bg-circle"></div>
       <div class="bg-circle-4 bg-circle"></div>
     </header>
-	<body>
+    <!-- END OF HEADER JOIN US -->
+<!-- COLLAPSIBLE BUTTON -->
+<div class="container">
+    <button type="button" class="collapsible"><h2>Our Chapters</h2></button>
+    <div class="content">
+      <p>MPA is a national network of diverse programmers looking to use technology to empower the underpriviliged.</p>
+    <p>
+      <h3> <a href="https://docs.google.com/forms/d/e/1FAIpQLSenHVOV_daZhUE1jslFgFeSNtbAP6hjFqinogcHs09UfOP21Q/viewform?usp=sf_link" target="_blank">Join existing chapter</a></h3>
+    </p>
+      <p>
+      <h3> Virginia
+      </h3>
+          <li><a href="https://beinvolved.jmu.edu/organization/minorityprogrammers" target="_blank">James Madison University</a></li>
+    </p>
+    <p>
+        <h3> <a href="mailto:shot@minorityprogrammers.org" target="_blank">Want to start a chapter....</a>
+          </h3>
+    </p>
+    </div>
+</div>
+<!-- END OF COLLAPSIBLE BUTTON DIV -->
+
+<!-- CODE FOR COLLAPSABLE BUTTON JAVASCRIPT -->
+<script> 
+    // https://www.w3schools.com/howto/howto_js_collapsible.asp
+    var coll = document.getElementsByClassName("collapsible");
+  var i;
+  
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
+  }
+    </script>
+    <!-- END OF COLLAPSIBLE BUTTON CODE -->
+	<!-- <body>
+      <section>
+          <div class="container d-flex justify-content-start">
+            <div class="pt-5">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSenHVOV_daZhUE1jslFgFeSNtbAP6hjFqinogcHs09UfOP21Q/viewform?embedded=true" width="640" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            </div>
+          </div>
+        </section> -->
+<!-- THIS IS WHERE GOOGLE FORM IS EMBEDDED  -->
+    <!-- SOCIAL HEADER TEXT -->
+    
 <section>
 	<div class="container d-flex justify-content-start">
 		<div class="pt-5">
@@ -73,6 +125,8 @@
 		</div>
 	</div>
 </section>
+<!-- END TEXT -->
+
 <section>
   <div class="row p-5">
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 col-xl-3 align-items-center">
@@ -112,13 +166,6 @@
       </div>
     </div>
   </div>
-	<div class="container d-flex justify-content-center">
-		<div class="pt-5">
-			<h1 class="px-2 d-none d-inline-block">
-			Our Chapters
-			</h1>
-		</div>
-	</div>
 </section>
 <section>
   <div class="container">
