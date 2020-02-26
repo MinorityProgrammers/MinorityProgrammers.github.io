@@ -91,6 +91,14 @@ header.masthead .bg-circle {
   border-radius: 10%;
   background: linear-gradient(0deg, #FFC700 0%, #ff3300 100%);
 }
+header.masthead .mpa-icon {
+  height: 20rem;
+  width: 40rem;
+  bottom: -55rem;
+  left: -55rem;
+  /* border-radius: 10%; */
+  background: url(https://drive.google.com/file/d/1UODAiVfcrxGS_FHDomr1KPKjBEXEcgbh/view?usp=sharing);
+}
 
 header.masthead .bg-circle-1 {
   height: 90rem;
