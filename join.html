@@ -86,25 +86,6 @@
 </div>
 <!-- END OF COLLAPSIBLE BUTTON DIV -->
 
-<!-- CODE FOR COLLAPSABLE BUTTON JAVASCRIPT -->
-<script> 
-    // https://www.w3schools.com/howto/howto_js_collapsible.asp
-    var coll = document.getElementsByClassName("collapsible");
-  var i;
-  
-  for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var content = this.nextElementSibling;
-      if (content.style.display === "block") {
-        content.style.display = "none";
-      } else {
-        content.style.display = "block";
-      }
-    });
-  }
-    </script>
-    <!-- END OF COLLAPSIBLE BUTTON CODE -->
 	<!-- <body>
       <section>
           <div class="container d-flex justify-content-start">
@@ -116,7 +97,7 @@
 <!-- THIS IS WHERE GOOGLE FORM IS EMBEDDED  -->
     <!-- SOCIAL HEADER TEXT -->
     
-<section>
+<!-- <section>
 	<div class="container d-flex justify-content-start">
 		<div class="pt-5">
 			<h1 class="px-2 d-none d-inline-block">
@@ -124,8 +105,13 @@
 			</h1>
 		</div>
 	</div>
-</section>
+</section> -->
 <!-- END TEXT -->
+
+<div class="container">
+  <button type="button" class="collapsible"><h2>Connect on Social</h2></button>
+  <div class="content">
+<!-- INSERTING SOCIAL CARDS -->
 
 <section>
   <div class="row p-5">
@@ -172,6 +158,31 @@
     <div class="row align-items-center"></div>
   </div>
 </section>
+
+<!-- END OF SOCIAL CARDS -->
+  </div>
+</div>
+<!-- END OF COLLAPSIBLE BUTTON DIV -->
+
+<!-- CODE FOR COLLAPSABLE BUTTON JAVASCRIPT -->
+<script> 
+  // https://www.w3schools.com/howto/howto_js_collapsible.asp
+  var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+  </script>
+  <!-- END OF COLLAPSIBLE BUTTON CODE -->
 
 <!-- Footer -->
 <footer class="py-5 bg-black">
