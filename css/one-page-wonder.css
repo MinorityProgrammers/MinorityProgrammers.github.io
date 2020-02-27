@@ -36,6 +36,13 @@ h6 {
   margin-right: auto;
   margin-left: auto;
 }
+.container-shrink {
+  width: 4%;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
 .rounded-pill {
   border-radius: 5rem;
 }
@@ -43,7 +50,7 @@ h6 {
 .navbar-custom {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: white(0, 0, 0, 0.7);
 }
 
 .navbar-custom .navbar-brand {
@@ -51,13 +58,15 @@ h6 {
   font-size: 1rem;
   letter-spacing: 0.1rem;
   font-weight: 700;
+  color: #000;
 }
 
 .navbar-custom .navbar-nav .nav-item .nav-link {
   text-transform: uppercase;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-weight: 700;
   letter-spacing: 0.1rem;
+  color: black;
 }
 
 header.masthead {
@@ -176,6 +185,7 @@ header.masthead .bg-circle-4 {
   border-radius: 50%;
 }
 .portrait-circle:hover {
+  
   filter:grayscale(50%);
   opacity: 50%;
 }
