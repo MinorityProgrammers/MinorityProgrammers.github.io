@@ -30,7 +30,15 @@ h6 {
   background-color: #000 !important;
 }
 .container_custom {
-  width: 50%;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+/* ADDED THIS TRYING TO GET NAVBAR RIGHT WITH LOGO */
+.container-nav {
+  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
@@ -38,8 +46,8 @@ h6 {
 }
 .container-shrink {
   width: 4%;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 0px;
+  padding-left: 0px;
   margin-right: auto;
   margin-left: auto;
 }
