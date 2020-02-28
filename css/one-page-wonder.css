@@ -50,7 +50,7 @@ h6 {
 .navbar-custom {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: white(0, 0, 0, 0.7);
+  background-color: white;
 }
 
 .navbar-custom .navbar-brand {
@@ -59,7 +59,9 @@ h6 {
   letter-spacing: 0.1rem;
   font-weight: 700;
   color: #000;
+
 }
+/* look up scsss */
 
 .navbar-custom .navbar-nav .nav-item .nav-link {
   text-transform: uppercase;
