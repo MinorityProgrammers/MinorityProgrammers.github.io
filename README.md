@@ -8,8 +8,9 @@ https://minorityprogrammers.org/
 ## Improvements
 * Add bios and more proffesional photos
 * Add social media link to footer
-* fix HTTPS error
 * Add more stock photos
 * Make more interactive Java Script elmeents
 * Custom CSS Scrollbar
-* Improve SEO ranking after HTTPS is fixed
+* Improve SEO ranking
+* Link youtube video
+* Link covid page
