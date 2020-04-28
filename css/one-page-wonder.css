@@ -26,6 +26,9 @@ h6 {
   letter-spacing: 0.1rem;
 }
 
+.padding-cust {
+  padding: 100px
+}
 .bg-black {
   background-color: #000 !important;
 }
