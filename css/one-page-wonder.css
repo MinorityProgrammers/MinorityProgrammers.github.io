@@ -94,6 +94,18 @@ header.masthead {
   background-size: cover;
 }
 
+header.mastheadblm {
+  position: relative;
+  overflow: hidden;
+  padding-top: calc(7rem + 72px);
+  padding-bottom: 7rem;
+  background: black;
+  /* background: linear-gradient(0deg, #151371 0%, #FF00B8 100%); */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover;
+}
 header.masthead .masthead-content {
   z-index: 1;
   position: relative;
