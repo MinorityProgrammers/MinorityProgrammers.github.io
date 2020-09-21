@@ -229,7 +229,10 @@ infobody::selection {
     }
 }
 
-b {}
+b {
+    color: #151371;
+    text-emphasis: 800;
+}
 
 b a {
     color: #151371;
