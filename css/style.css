@@ -19,17 +19,19 @@ body {
 header {
     width: 99vw;
     color: white;
-    /* background: linear-gradient(0deg, #151371 0%, #FF00B8 100%); */
+    background: linear-gradient(0deg, #151371 0%, #FF00B8 100%);
     margin: 0;
     padding: 0;
+    animation: rightfade;
+    animation-duration: 1s;
 }
 
 header img {
     width: 100%;
     margin: 0;
     padding: 0;
-    /* animation: rightfade; */
-    /* animation-duration: 5s; */
+    animation: rightfade;
+    animation-duration: 1s;
 }
 
 header img:hover {
@@ -182,11 +184,12 @@ infobody::selection {
 }
 
  ::-webkit-scrollbar-thumb {
-    background: lightgray;
+    background: #FFC700;
+    border-radius: 1em;
 }
 
  ::-webkit-scrollbar-thumb:hover {
-    background: gray;
+    background: #151371;
 }
 
 @keyframes enlarge {
@@ -224,6 +227,19 @@ infobody::selection {
         /* transform: translateX(0px); */
         opacity: 100;
     }
+}
+
+b {}
+
+b a {
+    color: #151371;
+    text-emphasis: 800;
+}
+
+b:hover {
+    outline-color: #151371;
+    outline-width: 1em;
+    outline-style: groove;
 }
 
 .social {
