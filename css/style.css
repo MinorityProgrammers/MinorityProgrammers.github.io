@@ -11,6 +11,11 @@ html::selection {
     color: white;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 header {
     width: 100vw;
     color: white;
@@ -108,7 +113,7 @@ footer a {
 footer img {
     width: 5vw;
     background-color: white;
-    border-radius: 3em;
+    border-radius: 50%;
     margin: 0.25em;
 }
 
@@ -238,7 +243,7 @@ infobody::selection {
 }
 
 #team img {
-    border-radius: 10em;
+    border-radius: 50%;
     padding: 1em;
     flex-wrap: wrap;
 }
