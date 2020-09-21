@@ -43,7 +43,7 @@ header img:hover {
     margin: 0;
     /* position: -webkit-sticky; */
     /* Safari */
-    position: fixed;
+    position: sticky;
     /* position: sticky; */
 }
 
@@ -60,8 +60,9 @@ header img:hover {
     vertical-align: middle;
     height: auto;
     width: auto;
-    max-height: 5em;
-    max-width: 10em;
+    max-height: 2em;
+    max-width: 6em;
+    padding: 0.5em;
 }
 
 .navitem:hover {
