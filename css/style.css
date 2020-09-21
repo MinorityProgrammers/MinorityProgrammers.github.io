@@ -128,6 +128,7 @@ infobody {
     color: black;
     padding: 1em;
     display: flex;
+    flex-direction: column;
     flex-flow: row wrap;
     align-items: center;
     justify-content: space-around;
@@ -155,6 +156,7 @@ infobody::selection {
     animation-duration: 1s;
     animation-name: enlarge;
     border-radius: 0.5em;
+    justify-content: center;
 }
 
 .factcard:hover {
@@ -181,13 +183,20 @@ infobody::selection {
 
 .eventcard {
     color: black;
+    width: 45%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     border-color: lightgray;
-    background-color: lightgray;
+    background-color: rgb(235, 235, 235);
     border-width: 1em;
     border-radius: 1em;
+    align-items: center;
+    justify-content: center;
+    word-spacing: 0em;
+    padding: 1em;
+    line-height: 50%;
+    position: relative;
 }
 
 .eventcard img {
@@ -200,6 +209,7 @@ infobody::selection {
 
 .eventcard:hover {
     border-color: black;
+    background-color: lightgray;
 }
 
 .eventcolumn {
@@ -213,6 +223,10 @@ infobody::selection {
 .eventcolumn h2 {
     color: #151371;
     padding: 0;
+}
+
+.eventcolumn a {
+    color: #FFC700;
 }
 
 ::-webkit-scrollbar {
