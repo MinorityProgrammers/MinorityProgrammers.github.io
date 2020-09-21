@@ -85,8 +85,8 @@ header img:hover {
 }
 
 footer {
-    background-color: black;
-    color: white;
+    background-color: #FFC700;
+    color: black;
     justify-content: space-evenly;
     text-align: center;
     align-items: stretch;
