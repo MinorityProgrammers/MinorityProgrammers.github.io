@@ -14,17 +14,17 @@ html::selection {
 header {
     width: 100vw;
     color: white;
-    background: linear-gradient(0deg, #151371 0%, #FF00B8 100%);
+    /* background: linear-gradient(0deg, #151371 0%, #FF00B8 100%); */
     margin: 0;
     padding: 0;
 }
 
 header img {
-    width: 100vw;
+    width: 100%;
     margin: 0;
     padding: 0;
-    animation: rightfade;
-    animation-duration: 5s;
+    /* animation: rightfade; */
+    /* animation-duration: 5s; */
 }
 
 header img:hover {
@@ -33,13 +33,18 @@ header img:hover {
 }
 
 .navbar {
-    background-color: none;
+    background-color: white;
     text-emphasis: bold;
     text-overflow: inherit;
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     width: 100vw;
     margin: 0;
+    /* position: -webkit-sticky; */
+    /* Safari */
+    position: fixed;
+    /* position: sticky; */
 }
 
 .navitem {
