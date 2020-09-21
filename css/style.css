@@ -17,7 +17,7 @@ body {
 }
 
 header {
-    width: 100vw;
+    width: 99vw;
     color: white;
     /* background: linear-gradient(0deg, #151371 0%, #FF00B8 100%); */
     margin: 0;
@@ -44,7 +44,7 @@ header img:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 100vw;
+    width: 99vw;
     margin: 0;
     /* position: -webkit-sticky; */
     /* Safari */
@@ -100,7 +100,7 @@ footer {
     flex-direction: column;
     flex-wrap: wrap;
     position: absolute;
-    width: 100vw;
+    width: 99vw;
     margin: 0;
     padding: 0;
 }
@@ -174,7 +174,7 @@ infobody::selection {
 }
 
 ::-webkit-scrollbar {
-    width: 1em;
+    width: 1vw;
 }
 
  ::-webkit-scrollbar-track {
