@@ -1,0 +1,252 @@
+html {
+    background-color: white;
+    color: black;
+    font-family: system-ui;
+    margin: 0;
+    padding: 0;
+}
+
+html::selection {
+    background-color: #151371;
+    color: white;
+}
+
+header {
+    width: 100vw;
+    color: white;
+    background: linear-gradient(0deg, #151371 0%, #FF00B8 100%);
+    margin: 0;
+    padding: 0;
+}
+
+header img {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    animation: rightfade;
+    animation-duration: 5s;
+}
+
+header img:hover {
+    /* clip-path: polygon(50% 19%, 0 76%, 100% 76%); */
+    cursor: pointer;
+}
+
+.navbar {
+    background-color: none;
+    text-emphasis: bold;
+    text-overflow: inherit;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    margin: 0;
+}
+
+.navitem {
+    animation: leftfade;
+    animation-duration: 1s;
+    /* padding-left: 1em;
+    padding-right: 1em; */
+}
+
+.navbar img {
+    /* object-fit: contain; */
+    /* line-height: 72px; */
+    vertical-align: middle;
+    height: auto;
+    width: auto;
+    max-height: 5em;
+    max-width: 10em;
+}
+
+.navitem:hover {
+    background-color: #FFC700;
+    border: white;
+    text-emphasis: bold;
+    cursor: pointer;
+}
+
+.navitem .active {
+    background-color: #FFC700;
+}
+
+.navitem a {
+    text-decoration: none;
+    color: black;
+    text-decoration-line: none;
+    display: flex;
+    text-align: center;
+    padding: 1em;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
+footer a {
+    text-decoration-line: none;
+    color: white;
+}
+
+footer img {
+    width: 5vw;
+    background-color: white;
+    border-radius: 3em;
+    margin: 0.25em;
+}
+
+footer img:hover {
+    opacity: 50%;
+}
+
+infobody {
+    background: white;
+    color: black;
+    padding: 1em;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+infobody a {
+    text-decoration-line: none;
+    color: black;
+}
+
+infobody::selection {
+    background: #151371;
+}
+
+.factcard {
+    border-color: #151371;
+    border-width: 1em;
+    border-style: ridge;
+    border-style: outset;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 1em;
+    margin: 0.5em;
+    animation-duration: 1s;
+    animation-name: enlarge;
+    border-radius: 0.5em;
+}
+
+.factcard>div {
+    flex-wrap: wrap;
+}
+
+.factcard::selection {
+    background: #151371;
+    color: white;
+}
+
+.factcard:hover {
+    border-color: #151371;
+    cursor: pointer;
+}
+
+.factcard ul {
+    text-align: left;
+}
+
+::-webkit-scrollbar {
+    width: 1em;
+}
+
+ ::-webkit-scrollbar-track {
+    background: black;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: lightgray;
+}
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: gray;
+}
+
+@keyframes enlarge {
+    0% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 100;
+    }
+}
+
+@keyframes rightfade {
+    0% {
+        /* translate: none; */
+        transform: translateX(-4em);
+        opacity: 0;
+    }
+    100% {
+        /* translate: 50% 50%; */
+        /* transform: translateX(0px); */
+        opacity: 100;
+    }
+}
+
+@keyframes leftfade {
+    0% {
+        /* translate: none; */
+        transform: translateX(3em);
+        opacity: 0;
+    }
+    100% {
+        /* translate: 50% 50%; */
+        /* transform: translateX(0px); */
+        opacity: 100;
+    }
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+}
+
+.copy {
+    padding: 1em;
+    /* display: inline; */
+}
+
+.icons {
+    /* display: flex; */
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#team img {
+    border-radius: 10em;
+    padding: 1em;
+    flex-wrap: wrap;
+}
+
+#team p img {
+    height: 1em;
+    width: 1em;
+}
+
+#team img:hover {
+    opacity: 50%;
+}
+
+#kushreveal {
+    flex-direction: column;
+    flex-wrap: wrap;
+}
