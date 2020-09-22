@@ -192,24 +192,33 @@ infobody::selection {
 
 .eventcard {
     color: black;
-    width: 45%;
+    width: 30%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: rgb(235, 235, 235);
+    /* background-color: linear-gradient(0deg, #151371 0%, #FF00B8 100%); */
     border-radius: 1em;
     align-items: center;
     justify-content: space-evenly;
     word-spacing: 0em;
-    padding: 1em;
-    margin: 1em;
-    line-height: 50%;
+    padding: 0.5%;
+    margin: 2.5%;
+    /* line-height: 50%; */
     position: relative;
     text-shadow: black;
+    background-image: linear-gradient(0deg, #151371 0%, #FF00B8 100%) 25 25 round;
     /* background-image: url("https://se-infra-cdn-images.azureedge.net/documents/11/e1e61d9f-951b-4db0-b272-08d850d170a5/original.png"); */
     border-color: #FFC700;
     border-width: 2em;
     object-fit: contain;
+}
+
+.eventcolumn h2,
+h3,
+p {
+    padding: 0.25em;
+    margin: 0.25em;
+    /* color: blue; */
 }
 
 .eventcard img {
@@ -231,7 +240,7 @@ infobody::selection {
 .eventcard:hover {
     border-color: black;
     background-color: lightgray;
-    opacity: 50%;
+    /* opacity: 50%; */
 }
 
 .eventcard summary {
@@ -248,7 +257,7 @@ infobody::selection {
     flex-direction: column;
     flex-wrap: wrap;
     text-align: left;
-    padding: 1em;
+    padding: 0em;
     background-color: white;
     border-radius: 0.5em;
     border-color: #FFC700;
