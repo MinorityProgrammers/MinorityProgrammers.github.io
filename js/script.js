@@ -9,6 +9,8 @@ function hide(idname) {
 
 function changeBorder(idname) {
     document.getElementById(idname).style.borderColor = "#FFC700";
+    document.getElementById(idname).style.borderImage = "none";
+
 }
 
 
