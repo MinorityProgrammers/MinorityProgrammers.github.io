@@ -48,15 +48,23 @@ header img:hover {
     justify-content: space-evenly;
     width: 99vw;
     margin: 0;
-    /* position: -webkit-sticky; */
-    /* Safari */
-    position: sticky;
     /* position: sticky; */
+    position: fixed;
+    animation: leftfade;
+    animation-duration: 1s;
+    animation-delay: 0s;
+    /* transform: opacity 0%; */
+    /* transition: opacity 1s ease-in;
+    animation-delay: 1s; */
+    z-index: 1;
+    border-bottom: 0.25em solid #151371;
+    /* border-bottom: 5px solid red; */
+    /* border-width: 0em 0em 1em 0em; */
 }
 
 .navitem {
-    animation: leftfade;
-    animation-duration: 1s;
+    /* animation: leftfade; */
+    /* animation-duration: 1s; */
     /* padding-left: 1em;
     padding-right: 1em; */
 }
@@ -144,7 +152,7 @@ infobody::selection {
 }
 
 .factcard {
-    border-color: #151371;
+    /* border-color: #151371; */
     border-width: 1em;
     border-style: ridge;
     /* border-style: outset; */
@@ -157,10 +165,16 @@ infobody::selection {
     animation-name: enlarge;
     border-radius: 0.5em;
     justify-content: center;
+    border-image: linear-gradient(0deg, #151371 50%, #FF00B8 100%) 30 25 round;
+    /* border-image: url("https://se-infra-cdn-images.azureedge.net/documents/11/86bf3056-6b6c-40db-cbae-08d850ce0b0e/original.png") 50 50 round; */
 }
 
 .factcard:hover {
-    background-color: rgb(255, 246, 209);
+    /* background-color: rgb(255, 246, 209); */
+    background-color: rgb(255, 226, 247);
+    color: black;
+    cursor: pointer;
+    border-color: #FFC700;
 }
 
 .factcard>div {
@@ -170,11 +184,6 @@ infobody::selection {
 .factcard::selection {
     background: #151371;
     color: white;
-}
-
-.factcard:hover {
-    border-color: #151371;
-    cursor: pointer;
 }
 
 .factcard ul {
@@ -192,11 +201,13 @@ infobody::selection {
     border-width: 1em;
     border-radius: 1em;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     word-spacing: 0em;
     padding: 1em;
     line-height: 50%;
     position: relative;
+    text-shadow: black;
+    background-image: url("https://se-infra-cdn-images.azureedge.net/documents/11/e1e61d9f-951b-4db0-b272-08d850d170a5/original.png");
 }
 
 .eventcard img {
@@ -205,11 +216,22 @@ infobody::selection {
     width: 10em;
     height: 10em;
     border-radius: 1em;
+    box-shadow: 2em;
 }
 
 .eventcard:hover {
     border-color: black;
     background-color: lightgray;
+    opacity: 50%;
+}
+
+.eventcard summary {
+    color: black;
+    display: inline-flex
+}
+
+.eventcard details {
+    display: flex;
 }
 
 .eventcolumn {
@@ -218,6 +240,7 @@ infobody::selection {
     flex-wrap: wrap;
     text-align: left;
     padding: 1em;
+    background-color: white;
 }
 
 .eventcolumn h2 {
@@ -239,11 +262,14 @@ infobody::selection {
 
  ::-webkit-scrollbar-thumb {
     background: #FFC700;
+    width: 0.8vw;
     border-radius: 1em;
 }
 
  ::-webkit-scrollbar-thumb:hover {
-    background: #151371;
+    background: #FF00B8;
+    width: 1vw;
+    cursor: pointer;
 }
 
 @keyframes enlarge {
@@ -290,12 +316,13 @@ b {
 
 b a {
     color: #151371;
+    text-shadow: black;
     text-emphasis: 800;
 }
 
 b:hover {
-    outline-color: #151371;
-    outline-width: 1em;
+    outline-color: #FFC700;
+    outline-width: 0.5em;
     outline-style: groove;
 }
 
@@ -333,4 +360,126 @@ b:hover {
 #kushreveal {
     flex-direction: column;
     flex-wrap: wrap;
+}
+
+
+/* hovercards */
+
+.image-area {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.img-wrapper {
+    width: 300px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-wrapper:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 180%;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, .3);
+    z-index: 1;
+    transform: skew(45deg);
+    transition: .5s;
+}
+
+.img-wrapper:hover:before {
+    left: -180%;
+}
+
+.img-wrapper img {
+    height: 400px;
+    width: 300px;
+    filter: grayscale(100%);
+    transition: 2s;
+}
+
+.img-wrapper:hover img {
+    filter: grayscale(0%);
+    transform: scale(1.1);
+}
+
+.img-wrapper h2 {
+    background: tomato;
+    font-family: Poppins;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transform: perspective(400px) rotateY(90deg);
+    transform-origin: right;
+    transition: 1s;
+}
+
+.img-wrapper:hover h2 {
+    transform: perspective(400px) rotateY(0deg);
+}
+
+.img-wrapper ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background: rgba(255, 255, 255, 0);
+}
+
+.img-wrapper ul li {
+    background: #333;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    line-height: 40px;
+    transform: perspective(800px) rotateY(90deg);
+    transition: .5s;
+    transform-origin: left;
+}
+
+.img-wrapper:hover ul li {
+    transform: perspective(800px) rotateY(0deg);
+}
+
+.img-wrapper:hover ul li:nth-child(1) {
+    transition-delay: .2s;
+}
+
+.img-wrapper:hover ul li:nth-child(2) {
+    transition-delay: .6s;
+}
+
+.img-wrapper:hover ul li:nth-child(3) {
+    transition-delay: .8s;
+}
+
+.img-wrapper:hover ul li:nth-child(4) {
+    transition-delay: 1s;
+}
+
+.img-wrapper ul li a {
+    color: tomato;
+    background: rgba(255, 255, 255, 0);
+}
+
+.img-wrapper ul li i {
+    color: tomato;
+    background: rgba(255, 255, 255, 0);
+}
+
+.img-wrapper ul li i:hover {
+    color: #fff;
+    background: rgba(255, 255, 255, 0);
 }
