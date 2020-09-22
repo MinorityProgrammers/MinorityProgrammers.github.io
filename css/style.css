@@ -368,9 +368,9 @@ b:hover {
 }
 
 #team img {
-    border-radius: 50%;
+    /* border-radius: 50%;
     padding: 1em;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
 }
 
 #team p img {
@@ -507,4 +507,77 @@ b:hover {
 .img-wrapper ul li i:hover {
     color: #fff;
     background: rgba(255, 255, 255, 0);
+}
+
+
+/* CARDS */
+
+
+/* Three columns side by side */
+
+.column {
+    float: left;
+    width: 30%;
+    margin-bottom: 2em;
+    padding: 0 1em;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Display the columns below each other instead of side by side on small screens */
+
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+
+/* Add some shadows to create a card effect */
+
+.card {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+
+/* Some left and right padding inside the container */
+
+.container {
+    padding: 0 16px;
+}
+
+
+/* Clear floats */
+
+.container::after,
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #555;
 }
