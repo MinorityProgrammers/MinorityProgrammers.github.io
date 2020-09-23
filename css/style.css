@@ -80,6 +80,11 @@ header img:hover {
     padding: 0.5em;
 }
 
+.navbar img:hover {
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    transform: scale(1.1)
+}
+
 .navitem:hover {
     background-color: #FFC700;
     border: white;
@@ -282,7 +287,7 @@ p {
 }
 
  ::-webkit-scrollbar-track {
-    background: black;
+    background: #151371;
 }
 
  ::-webkit-scrollbar-thumb {
@@ -373,6 +378,13 @@ b:hover {
     flex-wrap: wrap; */
 }
 
+#teamreveal>h2 {
+    text-align: center;
+    font-size: 1.5em;
+    justify-content: center;
+    display: inline-block;
+}
+
 #team p img {
     height: 1em;
     width: 1em;
@@ -380,11 +392,6 @@ b:hover {
 
 #team img:hover {
     opacity: 50%;
-}
-
-#kushreveal {
-    flex-direction: column;
-    flex-wrap: wrap;
 }
 
 
@@ -539,6 +546,7 @@ b:hover {
 
 .card {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 1em;
 }
 
 .card:hover {
@@ -572,12 +580,13 @@ b:hover {
     display: inline-block;
     padding: 8px;
     color: white;
-    background-color: #000;
+    background-color: #151371;
     text-align: center;
     cursor: pointer;
     width: 100%;
+    border-radius: 1em;
 }
 
 .button:hover {
-    background-color: #555;
+    background-color: #FF00B8;
 }
