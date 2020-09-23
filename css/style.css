@@ -157,10 +157,10 @@ infobody::selection {
 }
 
 .factcard {
-    /* border-color: #151371; */
+    border-color: #151371;
     border-width: 1em;
     border-style: ridge;
-    /* border-style: outset; */
+    border-style: outset;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -170,7 +170,9 @@ infobody::selection {
     animation-name: enlarge;
     border-radius: 0.5em;
     justify-content: center;
-    border-image: linear-gradient(0deg, #151371 50%, #FF00B8 100%) 30 25 round;
+    align-items: center;
+    align-content: center;
+    /* border-image: linear-gradient(0deg, #151371 50%, #FF00B8 100%) 30 25 round; */
     /* border-image: url("https://se-infra-cdn-images.azureedge.net/documents/11/86bf3056-6b6c-40db-cbae-08d850ce0b0e/original.png") 50 50 round; */
 }
 
@@ -385,6 +387,12 @@ b:hover {
     display: inline-block;
 }
 
+#team {
+    align-content: center;
+    justify-content: center;
+    /* margin: auto; */
+}
+
 #team p img {
     height: 1em;
     width: 1em;
@@ -551,6 +559,10 @@ b:hover {
 
 .card:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card>img {
+    width: 100%;
 }
 
 
