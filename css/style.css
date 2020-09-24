@@ -209,6 +209,7 @@ infobody::selection {
 .eventcard {
     color: black;
     width: 30%;
+    float: right;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -550,6 +551,20 @@ b:hover {
     float: left;
     flex-direction: row;
     width: 30%;
+    margin-bottom: 2em;
+    padding: 1em;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* position: relative; */
+}
+
+.eventhor {
+    /* display: flex; */
+    float: left;
+    flex-direction: row;
+    width: 45%;
     margin-bottom: 2em;
     padding: 1em;
     align-items: center;

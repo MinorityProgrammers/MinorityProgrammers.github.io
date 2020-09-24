@@ -20,7 +20,7 @@ function cursorDefault(idname) {
 
 function changeBorder(idname, hide) {
     if (!hide) {
-        if (document.getElementById(idname).style.borderColor === "#151371") {
+        if (document.getElementById(idname).style.borderColor != "#FFC700") {
             document.getElementById(idname).style.borderColor = "#FFC700";
         } else {
             document.getElementById(idname).style.borderColor = "#151371"

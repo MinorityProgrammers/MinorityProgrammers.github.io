@@ -36,59 +36,261 @@
 
 
     <infobody>
-        <div class="factcard" id="bg" onclick="reveal('bgreveal'),changeBorder('bg')">
+        <div class="factcard" id="upcoming" onclick="reveal('upcomingreveal', false),changeBorder('upcoming')">
             <h1>Upcoming Events</h1>
-            <div id="bgreveal" style="display:none">
-                <div class="eventcard">
-                    <img src="https://se-infra-cdn-images.azureedge.net/documents/11/d22db7e5-174e-4ce2-b232-08d850ce0b0e/1500.png"></img>
-                    <div class="eventcolumn">
-                        <h2>CS vs CIS: JMU Grad Panel </h2>
-                        <h3>Monday, September 28 @ 6:30PM EST</h3>
-                        <p>JMU’s CISE Computer Science (CS) and JMU’s COB Computer Information Systems (CIS) programs although have much overlap, the differences have never been clearly enumerated. On Monday, September 21st, 2020 6:30PM EST the Minority
-                            Programmers is proud to announce a panel of JMU Class of 2020’s Graduates of both programs (CS: Isaac Smith, Megan Gilbert & CIS: Emily Hoang, Trey Rustand) to answer any questions you have on these programs and the type of
-                            work its prepares you for.
-                            <a href="https://us04web.zoom.us/j/79744542493?pwd=SUpYRldVd3dRSldDeWRWYlM5Q3BTUT09" target="_blank">Event Link Goes Here</a>
-                        </p>
+            <div id="upcomingreveal" style="display:none">
+                <div class="row">
+                    <div class="column">
+                        <div class="card">
+                            <img src="https://se-infra-cdn-images.azureedge.net/documents/11/d22db7e5-174e-4ce2-b232-08d850ce0b0e/1500.png" alt="Kush Gupta">
+                            <div class="container">
+                                <h3>CS vs CIS: JMU Grad Panel</h3>
+                                <p class="title">Monday, September 28 @ 6:30PM EST</p>
+                                <p>JMU’s CISE Computer Science (CS) and JMU’s COB Computer Information Systems (CIS) programs although have much overlap, the differences have never been clearly enumerated. On Monday, September 21st, 2020 6:30PM EST the Minority
+                                    Programmers is proud to announce a panel of JMU Class of 2020’s Graduates of both programs (CS: Isaac Smith, Megan Gilbert & CIS: Emily Hoang, Trey Rustand) to answer any questions you have on these programs and the
+                                    type of work its prepares you for.</p>
+                                <p><button class="button">Zoom Link</button></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <div class="card">
+                                <img src="https://se-infra-cdn-images.azureedge.net/documents/11/d6950ad5-02b0-4d27-aa87-08d850d170a5/1500.png" alt="Seef Manj">
+                                <div class="container">
+                                    <h2>#ElectionHackathon</h2>
+                                    <p class="title"> October 16 - November 2</p>
+                                    <p>You have 17 days to build a platform for your own democratic voting system
+                                    </p>
+                                    <p><button href="https://election.devpost.com/" class="button">Sign Up Today</button></p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                </div>
-                <div class="eventcard">
-                    <img src="https://se-infra-cdn-images.azureedge.net/documents/11/d6950ad5-02b0-4d27-aa87-08d850d170a5/1500.png"></img>
-                    <div class="eventcolumn">
-                        <h2>#ElectionHackathon</h2>
-                        <h3>October 16 - November 2</h3>
-                        <p>You have 17 days to build a platform for your own democratic voting system.
-                            <a href="https://election.devpost.com/" target="_blank">Sign Up Today</a>
-                        </p>
-                    </div>
 
-                </div>
-                <div class="eventcard">
-                    <img src="https://se-infra-cdn-images.azureedge.net/documents/11/d22db7e5-174e-4ce2-b232-08d850ce0b0e/1500.png"></img>
-                    <div class="eventcolumn">
-                        <h2>CS vs CIS: JMU Grad Panel </h2>
-                        <h3>Monday, September 28 @ 6:30PM EST</h3>
-                        <p>JMU’s CISE Computer Science (CS) and JMU’s COB Computer Information Systems (CIS) programs although have much overlap, the differences have never been clearly enumerated. On Monday, September 21st, 2020 6:30PM EST the Minority
-                            Programmers is proud to announce a panel of JMU Class of 2020’s Graduates of both programs (CS: Isaac Smith, Megan Gilbert & CIS: Emily Hoang, Trey Rustand) to answer any questions you have on these programs and the type of
-                            work its prepares you for.
-                            <a href="https://us04web.zoom.us/j/79744542493?pwd=SUpYRldVd3dRSldDeWRWYlM5Q3BTUT09" target="_blank">Event Link Goes Here</a>
-                        </p>
-                    </div>
+
 
                 </div>
             </div>
         </div>
-        <div class="factcard" id="mission" onclick="reveal('missionreveal'),changeBorder('mission')">
+
+
+
+        <div class="factcard" id="past" onclick="reveal('pastreveal', true),changeBorder('past', true)">
             <h1>Past Events</h1>
-            <div id="missionreveal" style="display:none">
-                <p>
-                    Minority Programmers Association strives to create a diverse, multidisciplinary community using technical knowledge to develop globally minded projects. We strive to motivate our members through community outreach and professional development events.
-                    Our solutions are intended to be humanitarian in nature and socially impactful. We hope to uplift underprivileged communities, diversity the Science Technology Engineering and Mathematics discipline, and approach problems from a software
-                    engineering perspective
-                </p>
-            </div>
-        </div>
 
+            <div id="pastreveal" style="display:none">
+                <!-- <h2>National</h2> -->
+
+                <div class="row">
+                    <div class="column">
+                        <div class="card">
+                            <img src="https://se-infra-cdn-images.azureedge.net/documents/11/d8607526-8914-4165-bfd3-08d83556c62c/1500.png" alt="Kush Gupta">
+                            <div class="container">
+                                <h3>MinorityProgrammers/FAST Enterprises: Technical interview Workshop</h3>
+                                <p class="title">Tuesday, September 15 2020 at 7:00 PM EST</p>
+                                <p>With application deadlines coming around the corner, it's that time of year where we get ready for the daunting technical interview. On Tuesday, September 15th @ 7PM we are glad to have the team from FAST Enterprises (an
+                                    industry leader in the development/installation of software for government agencies) for a virtual Technical Interview #Workshop</p>
+                                <p><button class="button">Zoom Link</button></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <div class="card">
+
+                                <img src="https://se-infra-cdn-images.azureedge.net/documents/11/8d520022-8a91-496a-e8e8-08d83556c62c/1500.png" alt="Amazon Web Services (AWS) Virtual Coffee Chat">
+                                <div class="container">
+                                    <h2>Amazon Web Services (AWS) Virtual Coffee Chat</h2>
+                                    <p class="title">Monday, September 14 2020 at 6:30 PM EST</p>
+                                    <p>The Minority Programmers is proud to invite leaders at Amazon Web Services (AWS) to discuss their lives as consultants for the world’s leading cloud platform, the work AWS is doing to improve the world, and how you
+                                        can get involved!
+
+                                        <h4>Panel</h4>
+                                        <ul>
+                                            <li>John Dancy, Global Head, Professional Services, Worldwide Public Sector at Amazon Web Services</li>
+                                            <li>Nate Lee-Deison, Engagement Manager at Amazon Web Services (AWS)</li>
+                                            <li>Nawal Scannell, Federal Civilian Practice Manager at Amazon Web Services (AWS)</li>
+                                        </ul>
+                                    </p>
+                                    <p><button href="" class="button">Sign Up Today</button></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <div class="card">
+                                    <img src="https://se-infra-cdn-images.azureedge.net/documents/11/d8a53b47-29fe-4cee-e8e7-08d83556c62c/1500.png" alt="Day in the Life of A KPMG Developer">
+                                    <div class="container">
+                                        <h2>Day in the Life of A KPMG Developer</h2>
+                                        <p class="title">Wednesday, September 9 2020 at 6:00 PM EST</p>
+                                        <p>The Minority Programmers is proud to present the "Day in the Life of A KPMG Developer" where we can understand what it is like to be a software developers at one of the "Big Four" accounting firms from employees
+                                            who work there now!
+                                        </p>
+                                        <p><button href="" class="button">Sign Up Today</button></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <h2 style="text-align: center">JMU</h2> -->
+
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <img src="https://se-infra-cdn-images.azureedge.net/documents/11/321e8d21-46dd-4e85-1d03-08d8354ef47c/1500.png" alt="JMU Computer Science Club Mixer">
+                            <div class="container">
+                                <h2>JMU Computer Science Club Mixer</h2>
+                                <p class="title">Wednesday, September 2 2020 at 8:00 PM EST</p>
+                                <p>We're going to hold a CS club mixer tomorrow (9/2) from 8-9pm over Zoom so that new (and returning) students know about the clubs we have in the computer science department. You can see a list of our CS clubs. I hope you
+                                    can join us!
+                                </p>
+                                <p><button href="" class="button">List of JMU CS Clubs</button></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <img src="https://se-infra-cdn-images.azureedge.net/documents/11/bf6ce39f-4fc8-4ba6-d654-08d818e6d8a4/1500.png" alt="Day in the Life of A KPMG Developer">
+                            <div class="container">
+                                <h2>Black Lives Matter Hackathon</h2>
+                                <p class="title">Monday, July 13 2020 at 12:00 AM EST to Sunday, August 2 2020 at 11:59 PM EST</p>
+                                <p>You have 21 days (Monday July 13, 11:00AM EST - Sunday August 2, 11:59PM EST) for your team (1-5 people) to develop a coding solution to help mitigate systemic injustices.
+                                </p>
+                                <p><button href="" class="button">See the Results</button></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="card">
+                            <img src="https://se-infra-cdn-images.azureedge.net/documents/11/1e77d47f-046c-4e77-97c3-08d83556c62c/1500.png" alt="SAP Internship Programs">
+                            <div class="container">
+                                <h2>SAP Internship Programs</h2>
+                                <p class="title">•Aug 18, 2020</p>
+                                <p>SAP Global, sometimes known by its full name Systems, Applications, and Products in Data Processing, is a German multinational software corporation that makes enterprise software to manage business operations and customer
+                                    relations. The company is especially known for its ERP software. https://www.sap.com/ Joseph Ham, Operations & Experience Lead of SAP's Silicon Valley Next Talent Program (SVNT) (https://www.linkedin.com/in/jhamsilve...)
+                                    and Caitie Sullivan, Program Manager at SAP (https://www.linkedin.com/in/caitiesul...) virtually came out to talk to the Minority Programmers and participants of the Black Lives matter Hackathon about the wonderful
+                                    internship opportunities they have to offer
+                                </p>
+                                <p><button href="https://youtu.be/nD43NFAo8mU" class="button">Watch The Video</button></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="card">
+                            <img src="https://se-infra-cdn-images.azureedge.net/documents/11/4ad9a482-7833-46f0-df79-08d80d754ed1/1500.png" alt="Day in the Life of A KPMG Developer">
+                            <div class="container">
+                                <h2>Blockchain Cryptocurrency 101 w/ Shadman Hossain</h2>
+                                <p class="title">Tuesday, June 30 2020 at 7:00 PM EDT</p>
+                                <p>The Minority Programmers at JMU Officially has officially joined the Blockchain Education Network (BEN) the largest and longest running network of students, alumni, professors, teachers, and professionals. Blockchain has
+                                    the ability to preserve data integrity, security, privacy, inclusion, and decentralization across so many sectors and we are glad to have access to the knowledge base BEN provides. On Tuesday, June 30th at 7PM EST,
+                                    we are proud to welcome Blockchain Engineer, Founder/President of Blockchain at Mason, and Founder of SAINCapital, Shadman Hossain. He will give us a breakdown of Blockchain, Cryptocurrency, and how we can develop our
+                                    own cryptocurrency tokens!
+                                </p>
+                                <p><button href="https://youtu.be/lGqJy3qa_aY" class="button">Watch The Webinar</button></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="card">
+                            <img src="https://se-infra-cdn-images.azureedge.net/documents/11/0f20bd5b-2e93-49b6-77c7-08d808272306/1500.png" alt="Last Mile: Learning Code in Prison">
+                            <div class="container">
+                                <h2>Last Mile: Learning Code in Prison</h2>
+                                <p class="title">Wednesday, June 17 2020 at 1:00 PM EST</p>
+                                <p>The Minority Programmers are excited to announce this Wednesday 6/17 (1PM EST) we are having the Director of Programs at Last Mile, Sydney Heller, talk to us about the wonderful work his organization does teaching incarcerated
+                                    individuals to code in prison. Originally starting in the oldest prison in California, San Quentin, the Last Mile program teaches software engineering principles earning inmates competitive wages in men’s, women’s,
+                                    and youth correctional facilities. Given that now we see systemic injustices rise to the public spotlight, the fact that 95% of inmates eventually come back to our communities, and the mission of the Minority Programmers,
+                                    we believe this is a great opportunity to learn an effective way we can help restore equity through technology. Sydney wil give an overview of his program, how we can help expand this, and any other questions we have.
+                                    We are honored to be having such a wonderful organization share their steps to success with us as they were a huge inspiration to starting MPA, especially in such times where there are not many successful outlets to
+                                    tackle the injustices we are increasingly becoming aware of.The Minority Programmers are excited to announce this Wednesday 6/17 (1PM EST) we are having the Director of Programs at Last Mile, Sydney Heller, talk to
+                                    us about the wonderful work his organization does teaching incarcerated individuals to code in prison. Originally starting in the oldest prison in California, San Quentin, the Last Mile program teaches software engineering
+                                    principles earning inmates competitive wages in men’s, women’s, and youth correctional facilities. Given that now we see systemic injustices rise to the public spotlight, the fact that 95% of inmates eventually come
+                                    back to our communities, and the mission of the Minority Programmers, we believe this is a great opportunity to learn an effective way we can help restore equity through technology. Sydney wil give an overview of his
+                                    program, how we can help expand this, and any other questions we have. We are honored to be having such a wonderful organization share their steps to success with us as they were a huge inspiration to starting MPA,
+                                    especially in such times where there are not many successful outlets to tackle the injustices we are increasingly becoming aware of.
+                                </p>
+                                <p><button href="https://thelastmile.org/" class="button">Lean About Last Mile</button></p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="column">
+                        <div class="card">
+                            <img src="https://se-infra-cdn-images.azureedge.net/documents/11/08b518bd-7c4d-4c90-97d4-08d80308f4c9/1500.png" alt="JMU Tech Startups Webinar + Q&A">
+                            <div class="container">
+                                <h2>JMU Tech Startups Webinar + Q&A</h2>
+                                <p class="title">Wednesday, April 29 2020 at 6:00 PM EST</p>
+                                <p>Join the Minority Programmers Association and Trey Rustand, President of Hich (college ride-sharing app) and Hafiz Bhuyan, President of Drivense (online textbook subscription service) on their unique experience as founders
+                                    of technology startups and full-time students at James Madison University
+                                </p>
+                                <p><button href="https://youtu.be/RI3WxJGz44c" class="button">Watch the Webinar</button></p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="row">
+                    <div class="column">
+                        <div class="card">
+                            <img src="https://se-infra-cdn-images.azureedge.net/documents/11/5b4d037a-3850-4446-889a-08d80308f4c0/1500.png" alt="COVID19 Hackathon">
+                            <div class="container">
+                                <h3>COVID-19 Hackathon</h3>
+                                <p class="title">Sunday April 5, 10:00AM EST - Friday April 24, 11:59PM EST</p>
+                                <p>Develop a software solution (as a shippable product) that addresses one or more of the following problems that have arisen as a result of the global COVID-19 pandemic.</p>
+                                <p><button href="https://minorityprogrammers.org/covid" class="button">See The Results</button></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <div class="card">
+
+                                <img src="https://se-infra-cdn-images.azureedge.net/documents/11/8d520022-8a91-496a-e8e8-08d83556c62c/1500.png" alt="Amazon Web Services (AWS) Virtual Coffee Chat">
+                                <div class="container">
+                                    <h2>Amazon Web Services (AWS) Virtual Coffee Chat</h2>
+                                    <p class="title">Monday, September 14 2020 at 6:30 PM EST</p>
+                                    <p>The Minority Programmers is proud to invite leaders at Amazon Web Services (AWS) to discuss their lives as consultants for the world’s leading cloud platform, the work AWS is doing to improve the world, and how you
+                                        can get involved!
+
+                                        <h4>Panel</h4>
+                                        <ul>
+                                            <li>John Dancy, Global Head, Professional Services, Worldwide Public Sector at Amazon Web Services</li>
+                                            <li>Nate Lee-Deison, Engagement Manager at Amazon Web Services (AWS)</li>
+                                            <li>Nawal Scannell, Federal Civilian Practice Manager at Amazon Web Services (AWS)</li>
+                                        </ul>
+                                    </p>
+                                    <p><button href="" class="button">Sign Up Today</button></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="column">
+                                <div class="card">
+                                    <img src="https://se-infra-cdn-images.azureedge.net/documents/11/d8a53b47-29fe-4cee-e8e7-08d83556c62c/1500.png" alt="Day in the Life of A KPMG Developer">
+                                    <div class="container">
+                                        <h2>Day in the Life of A KPMG Developer</h2>
+                                        <p class="title">Wednesday, September 9 2020 at 6:00 PM EST</p>
+                                        <p>The Minority Programmers is proud to present the "Day in the Life of A KPMG Developer" where we can understand what it is like to be a software developers at one of the "Big Four" accounting firms from employees
+                                            who work there now!
+                                        </p>
+                                        <p><button href="" class="button">Sign Up Today</button></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <h2 style="text-align: center">JMU</h2> -->
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+        </div>
     </infobody>
 
     <footer>
