@@ -521,48 +521,12 @@ b:hover {
     background: rgba(255, 255, 255, 0);
 }
 
-
-/* CARDS */
-
-
-/* Three columns side by side */
-
-.column {
-    /* display: flex; */
-    float: left;
-    flex-direction: row;
-    width: 30%;
-    margin-bottom: 2em;
-    padding: 1em;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    /* position: relative; */
-}
-
-.eventhor {
-    /* display: flex; */
-    float: left;
-    flex-direction: row;
-    width: 45%;
-    margin-bottom: 2em;
-    padding: 1em;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    margin-right: auto;
-    /* position: relative; */
-}
-
-
-/* Display the columns below each other instead of side by side on small screens */
-
 @media screen and (max-width: 650px) {
     .card {
         width: 100%;
         flex-direction: row;
         flex-wrap: none;
+        flex-grow: unset;
         /* display: block; */
     }
 }
