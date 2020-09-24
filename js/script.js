@@ -1,27 +1,36 @@
-function reveal(idname) {
-    if (document.getElementById(idname).style.display === "none") {
+function reveal(idname, hide) {
+    if (!hide) {
+        if (document.getElementById(idname).style.display === "none") {
+            document.getElementById(idname).style.display = "flex";
+        } else {
+            document.getElementById(idname).style.display = "none";
+
+        }
+    } else {
         document.getElementById(idname).style.display = "flex";
-    } else {
-        document.getElementById(idname).style.display = "none";
+        // document.getElementById(idname).style.cursor = "default";
 
     }
-    // document.getElementById(idname).style.display = "flex";
 }
 
-function hide(idname) {
-    document.getElementById(idname).style.display = "none";
+function cursorDefault(idname) {
+    document.getElementById(idname).style.cursor = "default";
 
 }
 
-function changeBorder(idname) {
-    if (document.getElementById(idname).style.borderColor != "#FFC700") {
+function changeBorder(idname, hide) {
+    if (!hide) {
+        if (document.getElementById(idname).style.borderColor === "#151371") {
+            document.getElementById(idname).style.borderColor = "#FFC700";
+        } else {
+            document.getElementById(idname).style.borderColor = "#151371"
+
+        }
+    } else {
         document.getElementById(idname).style.borderColor = "#FFC700";
-    } else {
-        document.getElementById(idname).style.borderColor = "#FFC700"
     }
-    // document.getElementById(idname).style.borderImage = "none";
-
 }
+
 
 
 

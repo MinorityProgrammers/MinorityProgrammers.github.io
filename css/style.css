@@ -176,6 +176,15 @@ infobody::selection {
     /* border-image: url("https://se-infra-cdn-images.azureedge.net/documents/11/86bf3056-6b6c-40db-cbae-08d850ce0b0e/original.png") 50 50 round; */
 }
 
+.centerimage {
+    width: 50%;
+    justify-content: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+
 .factcard:hover {
     /* background-color: rgb(255, 246, 209); */
     background-color: rgb(255, 226, 247);
@@ -437,8 +446,10 @@ b:hover {
 }
 
 .img-wrapper img {
-    height: 400px;
+    /* height: 400px; */
+    height: 25em;
     width: 300px;
+    /* width: 18.75em; */
     filter: grayscale(100%);
     transition: 2s;
 }
@@ -456,6 +467,7 @@ b:hover {
     text-transform: uppercase;
     margin: 0;
     padding: 10px 0;
+    padding: 0.625em 0;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -480,17 +492,20 @@ b:hover {
 
 .img-wrapper ul li {
     background: #333;
-    height: 40px;
-    width: 40px;
+    /* height: 40px; */
+    height: 2.5em;
+    width: 2.5em;
+    /* width: 40px; */
     text-align: center;
-    line-height: 40px;
+    /* line-height: 40px; */
+    line-height: 2.5em;
     transform: perspective(800px) rotateY(90deg);
     transition: .5s;
     transform-origin: left;
 }
 
 .img-wrapper:hover ul li {
-    transform: perspective(800px) rotateY(0deg);
+    transform: perspective(50em) rotateY(0deg);
 }
 
 .img-wrapper:hover ul li:nth-child(1) {
@@ -531,12 +546,17 @@ b:hover {
 /* Three columns side by side */
 
 .column {
+    /* display: flex; */
     float: left;
+    flex-direction: row;
     width: 30%;
     margin-bottom: 2em;
-    padding: 0 1em;
+    padding: 1em;
     align-items: center;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    /* position: relative; */
 }
 
 
@@ -569,7 +589,7 @@ b:hover {
 /* Some left and right padding inside the container */
 
 .container {
-    padding: 0 16px;
+    padding: 1em;
 }
 
 

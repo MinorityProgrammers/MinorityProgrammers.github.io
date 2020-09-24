@@ -34,7 +34,7 @@
         <a href="index1.html"><img src="img/banner3.png" alt="gradient mpa"></a>
     </header>
     <infobody>
-        <div class="factcard" id="bg" onclick="reveal('bgreveal'),changeBorder('bg')">
+        <div class="factcard" id="bg" onclick="reveal('bgreveal', false),changeBorder('bg', false)">
             <h1>Who Are the Minority Programmers?</h1>
             <div id="bgreveal" style="display:none">
                 <p>
@@ -42,7 +42,7 @@
                 </p>
             </div>
         </div>
-        <div class="factcard" id="mission" onclick="reveal('missionreveal'),changeBorder('mission')">
+        <div class="factcard" id="mission" onclick="reveal('missionreveal', false),changeBorder('mission', false)">
             <h1>Mission</h1>
             <div id="missionreveal" style="display:none">
                 <p>
@@ -52,7 +52,7 @@
                 </p>
             </div>
         </div>
-        <div class="factcard" id="vision" onclick="reveal('visionreveal'),changeBorder('vision')">
+        <div class="factcard" id="vision" onclick="reveal('visionreveal', false),changeBorder('vision', false)">
             <h1>Vision</h1>
             <div id="visionreveal" style="display:none">
                 <p>
@@ -62,7 +62,7 @@
                 </p>
             </div>
         </div>
-        <div class="factcard" id="objective" onclick="reveal('objectivereveal'),changeBorder('objective')">
+        <div class="factcard" id="objective" onclick="reveal('objectivereveal', false),changeBorder('objective', false)">
             <h1>Objectives</h1>
             <!-- <h2 onclick="hide('objectivereveal')">hide</h2 onclick="hide('objectivereveal')"> -->
             <div id="objectivereveal" style="display:none">
@@ -78,11 +78,12 @@
                 </p>
             </div>
         </div>
-        <div class="factcard" id="team" onclick="reveal('teamreveal'),changeBorder('team')">
+        <div class="factcard" id="team" onclick="reveal('teamreveal', true),changeBorder('team', true)">
             <h1>Meet the Team</h1>
 
             <div id="teamreveal" style="display:none">
                 <!-- <h2>National</h2> -->
+
                 <div class="row">
                     <div class="column">
                         <div class="card">
