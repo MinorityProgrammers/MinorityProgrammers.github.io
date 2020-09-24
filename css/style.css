@@ -158,9 +158,9 @@ infobody::selection {
 
 .factcard {
     border-color: #151371;
-    border-width: 1em;
-    border-style: ridge;
-    border-style: outset;
+    border-width: 0.75em;
+    border-style: solid;
+    /* border-style: outset; */
     display: flex;
     flex-direction: column;
     text-align: center;
