@@ -136,31 +136,12 @@ footer img:hover {
     opacity: 50%;
 }
 
-infobody {
-    background: white;
-    color: black;
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: space-around;
-}
-
-infobody a {
-    text-decoration-line: none;
-    color: black;
-}
-
-infobody::selection {
-    background: #151371;
-}
-
 .factcard {
     border-color: #151371;
     border-width: 0.75em;
     border-style: solid;
     /* border-style: outset; */
+    /* width: 90%; */
     display: flex;
     flex-direction: column;
     text-align: center;
