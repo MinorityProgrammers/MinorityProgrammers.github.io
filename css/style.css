@@ -559,14 +559,24 @@ b:hover {
 /* Display the columns below each other instead of side by side on small screens */
 
 @media screen and (max-width: 650px) {
-    .column {
+    .card {
         width: 100%;
-        display: block;
+        flex-direction: row;
+        flex-wrap: none;
+        /* display: block; */
     }
 }
 
 
 /* Add some shadows to create a card effect */
+
+.card {
+    flex-direction: column;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    width: 30%;
+    margin: 1em;
+}
 
 .card {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
