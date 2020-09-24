@@ -1,5 +1,11 @@
 function reveal(idname) {
-    document.getElementById(idname).style.display = "flex";
+    if (document.getElementById(idname).style.display === "none") {
+        document.getElementById(idname).style.display = "flex";
+    } else {
+        document.getElementById(idname).style.display = "none";
+
+    }
+    // document.getElementById(idname).style.display = "flex";
 }
 
 function hide(idname) {
@@ -8,8 +14,12 @@ function hide(idname) {
 }
 
 function changeBorder(idname) {
-    document.getElementById(idname).style.borderColor = "#FFC700";
-    document.getElementById(idname).style.borderImage = "none";
+    if (document.getElementById(idname).style.borderColor != "#FFC700") {
+        document.getElementById(idname).style.borderColor = "#FFC700";
+    } else {
+        document.getElementById(idname).style.borderColor = "#FFC700"
+    }
+    // document.getElementById(idname).style.borderImage = "none";
 
 }
 
