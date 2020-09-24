@@ -523,8 +523,8 @@ b:hover {
 
 @media screen and (max-width: 650px) {
     .card {
-        width: 100%;
-        flex-direction: row;
+        width: 90%;
+        flex-direction: none;
         flex-wrap: none;
         flex-grow: unset;
         /* display: block; */
