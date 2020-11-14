@@ -1,7 +1,7 @@
 html {
   background-color: white;
   color: black;
-  font-family: system-ui;
+  font-family: system-ui, Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
 }
